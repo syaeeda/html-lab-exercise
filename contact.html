@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Syaeeda Khanum - Portfolio</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Portfolio Page">
+</head>
+<body>
+	<header style="display: flex; align-items: center; margin-bottom: 20px;">
+		<figure style="margin: 0 20px 0 0; text-align: center;">
+			<img src="img/photo.jpg" alt="Syaeeda passport photo" width="130" height="150" title="Profile photo of Syaeeda Khanum"> 
+			<!-- onerror="this.src='https://placehold.co/130x150?text=Profile+Photo';" -->
+			<figcaption>Profile Photo</figcaption>
+		</figure>
+		<div>
+			<h1>Syaeeda Khanum Binti Rosli</h1>
+			<p style="margin: 5px 0 0 0;">Strive for Progress, Not Perfection.</p>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li style="display: inline; margin-right: 20px;"><a href="index.html">Home</a></li>
+			<li style="display: inline; margin-right: 20px;"><a href="about.html">About Me</a></li>
+			<li style="display: inline; margin-right: 20px;"><a href="academic.html">Academic Record</li>
+			<li style="display: inline; margin-right: 20px;"><a href="projects.html">Projects</a></li>
+			<li style="display: inline; margin-right: 20px;"><a href="skills.html">Skills</a></li>	
+			<li style="display: inline; margin-right: 20px;"><a href="contact.html">Contact Me</a></li>	
+		</ul>
+	</nav>
+
+	<main>
+		<section id="contact-form">
+			<h2>Contact Me</h2>
+			<form action="#" method="post">
+				<fieldset style="border: 2px solid">
+					<legend style="font-size: 1.3em; font-weight: bold; color: green;">Personal Details</legend>
+					<p>
+						<label for="fullname">Full Name:</label><br>
+						<input type="text" id="fullname" name="fullname" style="border:2px solid navy; padding: 6px; font-size: 14px;" placeholder="Syaeeda Khanum" required maxlength="60">
+					</p>
+					
+					<p>
+						<label for="email">Email Address:</label><br>
+						<input type="email" id="email" name="email" style="border:2px solid navy; padding: 6px; font-size: 14px;" placeholder="name@example.com" required maxlength="60"><br>
+					</p>
+
+					<p>
+						<label for="phone-number">Phone Number:</label><br>
+						<input type="tel" id="phone-number" name="phone-number" style="border:2px solid navy; padding: 6px; font-size: 14px;" placeholder="0138994734" required maxlength="11"><br>
+					</p>
+					
+					<p>
+						<label for="age">Age:</label><br>
+						<input type="number" id="age" name="age" style="border:2px solid navy; padding: 6px; font-size: 14px;" placeholder="21" min="12" max="99" required><br>
+					</p>
+
+					<p>
+						<label for="date">Preferred Contact Date:</label><br>
+						<input type="date" id="date" name="date" style="border:2px solid navy; padding: 6px; font-size: 14px;" required maxlength="60"><br>
+					</p>
+				</fieldset><br>
+
+				<fieldset style="border: 2px solid">
+					<legend style="font-size: 1.3em; font-weight: bold; color: brown;">Inquiry Details</legend>
+					<p>
+						<label for="subject">Subject:</label><br>
+						<select id="subject" name="subject" style="border:2px solid navy; padding: 6px; font-size: 14px;"required>
+							<option value="">-- Please select a subject --</option>
+							<optgroup label="Academic">
+								<option value="software-req-eng">Software Requirements Engineering</option>
+								<option value="adv-prog">Advanced Programming</option>
+							</optgroup>
+							<optgroup label="Professional">
+								<option value="internship">Internship</option>
+								<option value="collab">Collaboration</option>
+							</optgroup>
+						</select>
+					</p>
+
+					<p>
+						<label for="interests">Interests:</label><br>
+						<input type="checkbox" name="interests" id="web" value="web">
+						<label for="web">Web Development</label><br>
+
+						<input type="checkbox" name="interests" id="ai" value="ai">
+						<label for="ai">Artificial Intelligence</label><br>
+
+						<input type="checkbox" name="interests" id="design" value="design">
+						<label for="design">UI/UX Design</label><br>
+					</p>
+
+					<p>
+						<label>Preferred Contact Method:</label><br>
+						<input type="radio" id="email-method" name="contact-method" required>
+						<label for="email-method">Email</label><br>
+
+						<input type="radio" id="ws-method" name="contact-method" required>
+						<label for="ws-method">WhatsApp</label><br>
+
+						<input type="radio" id="call-method" name="contact-method" required>
+						<label for="call-method">Call</label>
+					</p>
+
+					<p>
+						<label for="urgency">Urgency Level:</label><br>
+						<input type="range" id="urgency" name="urgency" style="border:2px solid navy; padding: 6px; font-size: 14px;" required><br>
+					</p>
+
+					<p>
+						<label for="message">Your Message:</label><br>
+						<textarea id="message" name="message" rows="4" cols="60" placeholder="Please describe your inquiry in detail..." maxlength="200" style="background-color: pink; border: 1px solid navy;" required></textarea>
+					</p>
+				</fieldset>
+
+				<p>
+					<input type="submit" value="Submit Form"style="background-color: midnightblue; color: white; border: 1px solid black; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+					<input type="reset" value="Clear Form" style="background-color: indianred; color: white; border: 1px solid black; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+				</p>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<address id="contact">
+			Email: <a href="mailto:syaeedakhanum@graduate.utm.my">syaeedakhanum@graduate.utm.my</a><br>
+			Phone: +60176992756<br>
+			Location: Skudai, Johor
+		</address>
+		<p><small>&copy; 2026 Syaeeda Khanum Binti Rosli. All rights reserved.</small></p>
+	</footer>
+</body>
+</html>

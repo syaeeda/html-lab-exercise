@@ -170,6 +170,7 @@
 			<p>A system to monitor employee activities to improve efficiency and operational management. Click the image to view the prototype.</p>
 			<figure>
 				<a href="https://www.canva.com/design/DAGqtxi_9Kg/aYMT65h2ATZpXCHr06UzRA/edit" target="_blank">
+					<!-- the align attribute is deprecated -->
 					<img src="img/dhl.png" alt="UI design to view employee work performance" width="700" height="400" align="left" title="DHL Activity & Time Tracking System UI design">
 				</a>
 				<figcaption>Figure 2: DHL Activity & Time Tracking System — a visual dashboard for staff performance analysis.</figcaption>
@@ -181,7 +182,7 @@
 			<h2>Contact Me</h2>
 			<form action="#" method="post">
 				<fieldset style="border: 2px solid">
-					<legend>Personal Details</legend>
+					<legend style="font-size: 1.3em; font-weight: bold; color: green;">Personal Details</legend>
 					<p>
 						<label for="fullname">Full Name:</label><br>
 						<input type="text" id="fullname" name="fullname" style="border:2px solid navy; padding: 6px; font-size: 14px;" placeholder="Syaeeda Khanum" required maxlength="60">
@@ -209,7 +210,7 @@
 				</fieldset><br>
 
 				<fieldset style="border: 2px solid">
-					<legend>Inquiry Details</legend>
+					<legend style="font-size: 1.3em; font-weight: bold; color: brown;">Inquiry Details</legend>
 					<p>
 						<label for="subject">Subject:</label><br>
 						<select id="subject" name="subject" style="border:2px solid navy; padding: 6px; font-size: 14px;"required>
@@ -239,13 +240,13 @@
 
 					<p>
 						<label>Preferred Contact Method:</label><br>
-						<input type="radio" id="email-method" name="email" required>
+						<input type="radio" id="email-method" name="contact-method" required>
 						<label for="email-method">Email</label><br>
 
-						<input type="radio" id="ws-method" name="whatsapp" required>
+						<input type="radio" id="ws-method" name="contact-method" required>
 						<label for="ws-method">WhatsApp</label><br>
 
-						<input type="radio" id="call-method" name="call" required>
+						<input type="radio" id="call-method" name="contact-method" required>
 						<label for="call-method">Call</label>
 					</p>
 
@@ -256,13 +257,13 @@
 
 					<p>
 						<label for="message">Your Message:</label><br>
-						<textarea id="message" name="message" rows="4" cols="60" placeholder="Please describe your inquiry in detail..." maxlength="200" required></textarea>
+						<textarea id="message" name="message" rows="4" cols="60" placeholder="Please describe your inquiry in detail..." maxlength="200" style="background-color: pink; border: 1px solid navy;" required></textarea>
 					</p>
 				</fieldset>
 
 				<p>
-					<input type="submit" value="Submit Form">
-					<input type="reset" value="Clear Form">
+					<input type="submit" value="Submit Form"style="background-color: midnightblue; color: white; border: 1px solid black; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+					<input type="reset" value="Clear Form" style="background-color: indianred; color: white; border: 1px solid black; padding: 8px 16px; font-size: 14px; cursor: pointer;">
 				</p>
 			</form>
 		</section>

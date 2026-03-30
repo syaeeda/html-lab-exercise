@@ -113,6 +113,10 @@ header {
 	color: var(--color-bg);
 	padding: var(--space-lg);
 	/*Padding is to make sure the header's internal content doesn't hit the edges of the screen.*/
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 header h1, header p {
@@ -122,8 +126,24 @@ header h1, header p {
 nav {
 	background-color: var(--color-secondary);
 	color: var(--color-text);
-	padding: var(--space-sm);
+	padding: var(--space-sm) var(--space-lg);
 	/*Padding gives the navigation bar some spaces around the links.*/
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: sticky;
+	top: 0;
+	z-index: 100;
+}
+
+.nav-links, nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--space-md);
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 main {
@@ -166,6 +186,13 @@ nav a {
     padding: var(--space-sm) var(--space-md);
     /*Margin separates links from one another. 
     Padding increases the clickable hit area.*/
+
+    transition: color 0.2s, background-color 0.2s;
+}
+
+nav a.active {
+	border-bottom: 3px solid var(--color-accent);
+	border-radius: var(--radius-sm) var(--radius-sm) 0 0;
 }
 
 nav a:hover {
@@ -199,4 +226,13 @@ button, .btn {
 :focus {
     outline: none;
     box-shadow: 0 0 0 3px var(--color-accent);
+}
+
+header div {
+    flex: 1;
+}
+
+header figure {
+    flex: 0 0 auto;
+    margin-left: var(--space-lg);
 }

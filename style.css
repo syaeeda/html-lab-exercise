@@ -236,3 +236,37 @@ header figure {
     flex: 0 0 auto;
     margin-left: var(--space-lg);
 }
+
+/* Task 4: Home Page Grid */
+#page-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg); 
+    align-content: stretch;
+}
+
+.card {
+    background-color: var(--color-bg);
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-4px); 
+}
+
+/* Make one element span full width/two columns */
+.featured {
+    grid-column: span 2; 
+}
+
+/* Task 4: Sidebar Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 280px; 
+    gap: var(--space-lg); 
+}

@@ -5,69 +5,69 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Portfolio Page">
 </head>
-<body style="background-color: #f9f7ff; color: #4a4a4a; align-items: center; font-family: Segoe UI;">
-	<header style="display: flex; align-items: center; background-color: #3c096c; color: white; justify-content: center; border-bottom: 4px solid #ffb703; padding: 30px 0;">
-		<figure style="text-align: center;">
-			<img src="img/photo.jpg" alt="Syaeeda passport photo" width="130" height="150" title="Profile photo of Syaeeda Khanum" style="border: 3px solid #ffb703; border-radius: 10px;"> 
+<body>
+	<header>
+		<figure>
+			<img src="img/photo.jpg" alt="Syaeeda passport photo" width="130" height="150" title="Profile photo of Syaeeda Khanum"> 
 			<!-- onerror="this.src='https://placehold.co/130x150?text=Profile+Photo';" -->
 			<figcaption>Profile Photo</figcaption>
 		</figure>
-		<div style="padding-right: 55px;">
+		<div>
 			<h1>Syaeeda Khanum Binti Rosli</h1>
 			<p>Strive for Progress, Not Perfection.</p>
 		</div>
 	</header>
 
-	<nav style="background-color: #5a189a; padding: 12px 0; text-align: center;">
-		<ul style="list-style-type: none; margin: 0; padding: 0;">
-			<li style="display: inline; margin-right: 20px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-			<li style="display: inline; margin-right: 20px;"><a href="about.html" style="color: white; text-decoration: none;">About Me</a></li>
-			<li style="display: inline; margin-right: 20px;"><a href="academic.html" style="color: white; text-decoration: none;">Academic Record</a></li>
-			<li style="display: inline; margin-right: 20px;"><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
-			<li style="display: inline; margin-right: 20px;"><a href="skills.html" style="color: white; text-decoration: none;">Skills</a></li>	
-			<li style="display: inline; margin-right: 20px;"><a href="contact.html" style="color: white; text-decoration: none; border-bottom: 2px solid #ffb703;">Contact Me</a></li>	
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About Me</a></li>
+			<li><a href="academic.html">Academic Record</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="skills.html">Skills</a></li>	
+			<li><a href="contact.html">Contact Me</a></li>	
 		</ul>
 	</nav>
 
-	<main style="padding: 45px; margin: 5px 80px;">
+	<main>
 		<section id="contact-form">
-			<h2 style="color: #3c096c; border-bottom: 1px solid #ffb703;">Contact Form</h2>
+			<h2>Contact Form</h2>
 			<p>Use the form below to reach out for collaborations, academic inquiries, or general questions.</p>
 			<form action="#" method="post">
 				<!-- <fieldset style="border: 2px solid"> -->
-				<fieldset style="border: 2px solid #3c096c; padding: 20px 40px; border-radius: 15px; margin-bottom: 10px; background-color: white;">
-					<legend style="font-weight: bold; color: green;">Personal Details</legend>
+				<fieldset>
+					<legend>Personal Details</legend>
 					<p>
 						<label for="fullname">Full Name:</label><br>
-						<input type="text" id="fullname" name="fullname" style="border:2px solid navy; padding: 6px; font-size: 14px; width: 40%; margin-top: 6px; border-radius: 4px;" placeholder="Syaeeda Khanum" required maxlength="60">
+						<input type="text" id="fullname" name="fullname" placeholder="Syaeeda Khanum" required maxlength="60">
 					</p>
 					
 					<p>
 						<label for="email">Email Address:</label><br>
-						<input type="email" id="email" name="email" style="border:2px solid navy; padding: 6px; font-size: 14px; width: 40%; margin-top: 6px;" placeholder="name@example.com" required maxlength="60"><br>
+						<input type="email" id="email" name="email" placeholder="name@example.com" required maxlength="60"><br>
 					</p>
 
 					<p>
 						<label for="phone-number">Phone Number:</label><br>
-						<input type="tel" id="phone-number" name="phone-number" style="border:2px solid navy; padding: 6px; font-size: 14px; width: 20%; margin-top: 6px; border-radius: 4px;" placeholder="0138994734" required maxlength="11"><br>
+						<input type="tel" id="phone-number" name="phone-number" placeholder="0138994734" required maxlength="11"><br>
 					</p>
 					
 					<p>
 						<label for="age">Age:</label><br>
-						<input type="number" id="age" name="age" style="border:2px solid navy; padding: 6px; font-size: 14px; margin-top: 6px; border-radius: 4px;" placeholder="21" min="12" max="99" required><br>
+						<input type="number" id="age" name="age" placeholder="21" min="12" max="99" required><br>
 					</p>
 
 					<p>
 						<label for="date">Preferred Contact Date:</label><br>
-						<input type="date" id="date" name="date" style="border:2px solid navy; padding: 6px; font-size: 14px; margin-top: 6px; border-radius: 4px;" required maxlength="60"><br>
+						<input type="date" id="date" name="date" required maxlength="60"><br>
 					</p>
 				</fieldset><br>
 
-				<fieldset style="border: 2px solid #ffb703; padding: 20px 40px; border-radius: 15px; margin-bottom: 30px; background-color: white;">
-					<legend style="font-weight: bold; color: brown;">Inquiry Details</legend>
+				<fieldset>
+					<legend>Inquiry Details</legend>
 					<p>
 						<label for="subject">Subject:</label><br>
-						<select id="subject" name="subject" style="border:2px solid navy; padding: 6px; font-size: 14px; border-radius: 4px; margin-top: 6px;" required>
+						<select id="subject" name="subject" required>
 							<option value="">-- Please select a subject --</option>
 							<optgroup label="Academic">
 								<option value="software-req-eng">Software Requirements Engineering</option>
@@ -82,7 +82,7 @@
 
 					<p>
 						<label for="interests">Interests:</label><br>
-						<input type="checkbox" name="interests" id="web" value="web" style="margin-top: 6px;">
+						<input type="checkbox" name="interests" id="web" value="web">
 						<label for="web">Web Development</label><br>
 
 						<input type="checkbox" name="interests" id="ai" value="ai">
@@ -94,7 +94,7 @@
 
 					<p>
 						<label>Preferred Contact Method:</label><br>
-						<input type="radio" id="email-method" name="contact-method" style="margin-top: 6px;" required>
+						<input type="radio" id="email-method" name="contact-method" required>
 						<label for="email-method">Email</label><br>
 
 						<input type="radio" id="ws-method" name="contact-method" required>
@@ -106,24 +106,24 @@
 
 					<p>
 						<label for="urgency">Urgency Level:</label><br>
-						<input type="range" id="urgency" name="urgency" style="border:2px solid navy; padding: 6px; font-size: 14px; width: 20%; margin-top: 6px;" required><br>
+						<input type="range" id="urgency" name="urgency" required><br>
 					</p>
 
 					<p>
 						<label for="message">Your Message:</label><br>
-						<textarea id="message" name="message" rows="4" cols="60" placeholder="Please describe your inquiry in detail..." maxlength="200" style="background-color: pink; border: 1px solid navy; margin-top: 6px; width: 95%; padding: 6px;" required></textarea>
+						<textarea id="message" name="message" rows="4" cols="60" placeholder="Please describe your inquiry in detail..." maxlength="200" required></textarea>
 					</p>
 				</fieldset>
 
-				<p style="text-align: center;">
-					<input type="submit" value="Submit Form"style="background-color: midnightblue; color: white; border: 1px solid black; border-radius: 3px; padding: 8px 16px; font-size: 14px; cursor: pointer;">
-					<input type="reset" value="Clear Form" style="background-color: indianred; color: white; border: 1px solid black; border-radius: 3px; padding: 8px 16px; font-size: 14px; cursor: pointer;">
+				<p>
+					<input type="submit" value="Submit Form">
+					<input type="reset" value="Clear Form">
 				</p>
 			</form>
 		</section>
 	</main>
 
-	<footer style="text-align: center; background-color: #f2e9ff; color: #5a189a; padding: 20px 0;">
+	<footer>
 		<br><address id="contact">
 			Phone: +60176992756<br>
 			Email: <a href="mailto:syaeedakhanum@graduate.utm.my">syaeedakhanum@graduate.utm.my</a><br>

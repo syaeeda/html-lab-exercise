@@ -431,3 +431,22 @@ th {
 tbody tr:nth-child(even) {
     background-color: rgba(0, 0, 0, 0.04);
 }
+
+#skills ul, #skills ol {
+    padding-left: var(--space-md);
+}
+
+#skills ul li, #skills ol li {
+    padding: var(--space-md) 0;
+    border-top: 1px solid var(--color-muted);
+    border-bottom: 1px solid var(--color-muted);
+    margin-top: -1px;
+}
+
+#skills ul li:first-child, #skills ol li:first-child {
+    border-top: none;
+}
+
+#skills ul li:last-child, #skills ol li:last-child {
+    border-bottom: none;
+}

@@ -78,12 +78,13 @@ p {
 	line-height: 1.6;
 	color: var(--color-text);
 	margin-bottom: var(--space-md);
+	text-align: justify;
 }
 
 small {
 	font-size: 1.2rem;
 	line-height: 1.4;
-	color: var(--color-muted);
+	color: var(--color-text-light);
 }
 
 blockquote {
@@ -137,7 +138,7 @@ header h1, header p {
 
 nav {
 	background-color: var(--color-secondary);
-	color: var(--color-text);
+	color: var(--color-accent-soft);
 	padding: var(--space-sm) var(--space-lg);
 	/*Padding gives the navigation bar some spaces around the links.*/
 
@@ -172,18 +173,17 @@ main {
 
 footer {
 	background-color: var(--color-secondary);
-    color: var(--color-text-light);
+    color: var(--color-surface);
     padding: var(--space-lg);
     text-align: center;
 }
 
 a:link {
     color: var(--color-accent);
-    text-decoration: underline;
 }
 
 a:visited {
-    color: #8e44ad; 
+    color: #ffffff; 
 }
 
 a:hover {
@@ -214,7 +214,7 @@ nav a.active {
 
 nav a:hover {
     background-color: var(--color-secondary);
-    color: var(--color-bg);
+    color: var(--color-accent);
 }
 
 button, .btn {
@@ -231,18 +231,9 @@ button, .btn {
     Padding sets the button's size.*/
 }
 
-.card {
-    background-color: var(--color-bg);
-    border-radius: var(--radius-md);
-    padding: var(--space-md);
-    margin: var(--space-md) 0;
-    
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 :focus {
     outline: none;
-    box-shadow: 0 0 0 3px var(--color-accent);
+    box-shadow: 0 0 0 2px var(--color-bg);*/
 }
 
 header div {
@@ -252,13 +243,13 @@ header div {
 header figure {
     flex: 0 0 auto;
     margin-left: var(--space-lg);
+    text-align: center;
 }
 
 #page-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--space-lg); 
-    /*align-content: stretch;*/
     grid-template-columns: 1fr;
 }
 
@@ -268,7 +259,8 @@ header figure {
     border-radius: var(--radius-md);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-
+    margin: var(--space-md) 0;
+    
     display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -276,6 +268,7 @@ header figure {
 
 .card:hover {
     transform: translateY(-4px); 
+    background-color: var(--color-accent);
 }
 
 .featured {
@@ -337,13 +330,14 @@ header figure {
 img {
 	max-width: 100%;
     height: auto;
+    border-radius: 12px;
 }
 
 h2::after {
     content: "";
     display: block;
-    width: 60px;
-    height: 4px;
+    width: 1140px;
+    height: 1px;
     background-color: var(--color-accent);
     margin-top: var(--space-sm);
     border-radius: var(--radius-sm);
@@ -355,7 +349,6 @@ blockquote::before {
     font-size: 5rem;
     color: var(--color-accent);
     opacity: 0.3;
-    position: absolute;
     top: -1.5rem;
     left: 1rem;
     line-height: 1;
@@ -449,4 +442,29 @@ tbody tr:nth-child(even) {
 
 #skills ul li:last-child, #skills ol li:last-child {
     border-bottom: none;
+}
+
+section {
+    margin-bottom: 5rem; 
+}
+
+#projects figure:first-of-type {
+    text-align: center;
+    margin: var(--space-lg) 0;
+}
+
+img[align="left"] {
+    margin-right: var(--space-lg); 
+    margin-bottom: var(--space-md);
+}
+
+#projects figcaption {
+    padding-top: var(--space-sm);
+    color: var(--color-secondary);
+    font-weight: 600; 
+    /*text-align: justify;*/
+}
+
+footer p {
+    text-align: center;
 }

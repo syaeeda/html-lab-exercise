@@ -408,3 +408,26 @@ button:hover, .btn:hover, input[type="submit"]:hover, input[type="reset"]:hover 
 button:active, .btn:active, input[type="submit"]:active, input[type="reset"]:active {
     transform: scale(0.97);
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-md) 0;
+    background-color: var(--color-bg);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: var(--space-md);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+th {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.04);
+}

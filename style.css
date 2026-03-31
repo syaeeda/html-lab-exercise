@@ -1,3 +1,10 @@
+/* ============================================ 
+BREAKPOINTS 
+mobile-first base: 320px and up (default) 
+tablet:   @media (min-width: 600px) 
+desktop:  @media (min-width: 1024px) 
+============================================ */ 
+
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
 
 :root {
@@ -101,11 +108,12 @@ code {
 	border-radius: 4px;
 }
 
-caption {
+figcaption {
 	font-size: 1.4rem;
 	line-height: 1.4;
 	padding: var(--space-sm);
-	color: var(--color-primary);
+	/*color: var(--color-primary);
+	font-weight: bold;*/
 }
 
 header {
@@ -116,7 +124,11 @@ header {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
+
+	flex-direction: column;
+    text-align: center;
+    gap: var(--space-md);
 }
 
 header h1, header p {
@@ -130,11 +142,12 @@ nav {
 	/*Padding gives the navigation bar some spaces around the links.*/
 
 	display: flex;
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 	align-items: center;
 	position: sticky;
 	top: 0;
 	z-index: 100;
+	flex-direction: column;
 }
 
 .nav-links, nav ul {
@@ -144,6 +157,9 @@ nav {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	flex-direction: column; 
+    align-items: center;
 }
 
 main {
@@ -238,13 +254,12 @@ header figure {
     margin-left: var(--space-lg);
 }
 
-/* Task 4: Home Page Grid */
 #page-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: var(--space-lg); 
-    align-content: stretch;
+    /*align-content: stretch;*/
+    grid-template-columns: 1fr;
 }
 
 .card {
@@ -253,21 +268,73 @@ header figure {
     border-radius: var(--radius-md);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
+
+    display: flex;
+	flex-direction: column;
+	height: 100%;
 }
 
-/* Hover effect for cards */
 .card:hover {
     transform: translateY(-4px); 
 }
 
-/* Make one element span full width/two columns */
 .featured {
     grid-column: span 2; 
 }
 
-/* Task 4: Sidebar Layout */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 280px; 
     gap: var(--space-lg); 
+}
+
+.card-grid { 
+	display: grid; 
+	grid-template-columns: 1fr; 
+	gap: var(--space-md); 
+} 
+
+@media (min-width: 600px) { 
+	header {
+        flex-direction: row;
+        text-align: left;
+        justify-content: space-between;
+    }
+
+    #page-cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	nav ul {
+		flex-direction: row;
+	}
+} 
+
+@media (min-width: 1024px) {
+    #page-cards {
+         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 280px;
+    }
+
+    nav {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.nav-links, nav ul {
+		flex-direction: row;
+	}
+}
+
+img {
+	max-width: 100%;
+    height: auto;
 }

@@ -385,3 +385,26 @@ input:focus, select:focus, textarea:focus, button:focus, .btn:focus {
     box-shadow: 0 0 0 3px var(--color-accent);
     border-color: var(--color-accent);
 }
+
+button, .btn, input[type="submit"], input[type="reset"] {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    margin: var(--space-md) var(--space-sm) var(--space-md) 0;
+    
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover, .btn:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: var(--color-primary);
+}
+
+button:active, .btn:active, input[type="submit"]:active, input[type="reset"]:active {
+    transform: scale(0.97);
+}

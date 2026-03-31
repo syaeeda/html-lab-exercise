@@ -338,3 +338,50 @@ img {
 	max-width: 100%;
     height: auto;
 }
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: var(--color-accent);
+    margin-top: var(--space-sm);
+    border-radius: var(--radius-sm);
+}
+
+blockquote::before {
+    content: '"';
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    color: var(--color-accent);
+    opacity: 0.3;
+    position: absolute;
+    top: -1.5rem;
+    left: 1rem;
+    line-height: 1;
+}
+
+input[type="text"], input[type="email"], input[type="tel"], 
+input[type="number"], input[type="date"], select, textarea {
+    width: 100%;
+    padding: var(--space-md);
+    border: 1px solid var(--color-muted);
+    border-radius: var(--radius-sm);
+    font-family: var(--font-body);
+    font-size: 1.6rem;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    margin-top: var(--space-sm);
+    box-sizing: border-box;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--color-accent);
+    margin-right: var(--space-sm);
+}
+
+input:focus, select:focus, textarea:focus, button:focus, .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px var(--color-accent);
+    border-color: var(--color-accent);
+}

@@ -41,15 +41,20 @@
 			<table border="1" cellpadding="8" cellspacing="0">
 				<caption>Year 2 Academic Results</caption>
 				<thead>
-					<tr >
-						<th scope="col">Course Code</th>
-						<th scope="col">Course Name</th>
+					<tr>
+						<th rowspan="2" scope="col">Course Type</th>
+						<th rowspan="2" scope="col">Course Code</th>
+						<th rowspan="2" scope="col">Course Name</th>
+						<th colspan="2" scope="colgroup">Results</th>
+					</tr>
+					<tr>
 						<th scope="col">Credits</th>
-						<th scope="col">Grade</th>
+        				<th scope="col">Grade</th>
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
+						<th rowspan="3" scope="rowgroup">Major</th>
 						<td>SCSE2123</td>
 						<td>SOFTWARE REQUIREMENTS ENGINEERING</td>
 						<td>3</td>
@@ -68,6 +73,7 @@
 						<td>A</td>
 					</tr>
 					<tr>
+						<th rowspan="3" scope="rowgroup">Electives</th>
 						<td>UHLB3132</td>
 						<td>PROFESSIONAL COMMUNICATION SKILLS</td>
 						<td>2</td>
@@ -88,7 +94,7 @@
 				</tbody>
 				<tfoot>
 					<tr>
-						<td colspan="2">Total Credit Counted / GPA</td>
+						<td colspan="3">Total Credit Counted / GPA</td>
 						<td><strong>16</strong></td>
 						<td>4.0</td>
 					</tr>
